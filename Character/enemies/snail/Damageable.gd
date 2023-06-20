@@ -2,6 +2,8 @@ extends Node
 
 class_name Damageable
 
+signal on_hit(node : Node, damage_taken : int)
+
 @export var health : float = 20 :
 	get:
 		return health
@@ -13,5 +15,5 @@ class_name Damageable
 func hit(damage : int):
 	health -= damage
 	
-	if(health <= 0):
-		get_parent().queue_free()
+	emit_signal("on_hit", get_parent(), damage)
+	

@@ -1,3 +1,6 @@
+State
+CharacterStateMachine
+AnimationTree
 Timer
 Label
 Control
@@ -8,8 +11,6 @@ CollisionShape2D
 CharacterBody2D
 CollisionPolygon2D
 Area2D
-State
-AnimationTree
 TextureRect
 ColorRect
 AnimatedSprite2D
